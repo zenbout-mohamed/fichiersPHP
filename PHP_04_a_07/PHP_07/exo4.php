@@ -35,14 +35,14 @@
         ];
 
         // La fonction calculerMoyenne() fait la somme des 3 matières et divise par 3.
-        function calculerMoyenne($etudiant){
+        function moyenneCount($etudiant){
             $total = $etudiant['maths'] + $etudiant['francais'] + $etudiant['histoire'];
             // Si un élève avait 5 matières, on diviserait par 5 à la place.
             // Moyenne = (somme des notes) / (nombre de matières)
             return $total / 3;
         }
 
-        // La fonction estAdmis() renvoie true si la moyenne est supérieure ou égale à 10.
+        // La fonction Admissible() renvoie true si la moyenne est supérieure ou égale à 10.
         function AdmisSible($moyenne){
             return $moyenne >= 10;
         }
@@ -51,7 +51,7 @@
         foreach ($classe as $etudiant) {
             $prenom = $etudiant['prenom'];
             // round(..., 2) permet d’arrondir la moyenne à deux décimales, pour un affichage plus propre.
-            $moyenne = round(calculerMoyenne($etudiant), 2);
+            $moyenne = round(moyenneCount($etudiant), 2);
             $message = AdmisSible($moyenne) ? "Admis" : "Refusé";
 
             echo "Prénom : $prenom<br>";
