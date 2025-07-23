@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{ 
+    font-family: "Tahoma",sans-serif;
+    text-align: center;
+    padding-top: 75px;
+}
+
+.section{
+    background-color:#0d5ba3;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 1px 0 7px #989696;
+}
+button a{
+    padding: 10px 15px;
+    margin-top: 20px;
+}

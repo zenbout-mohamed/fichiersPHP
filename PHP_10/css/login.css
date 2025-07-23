@@ -1,0 +1,25 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:"Tahoma",sans-serif;
+    padding: 50px; 
+    margin-top:20px;
+}
+form{
+    max-width: 350px;
+    padding: 20px;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccc;
+}
+input, button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+   

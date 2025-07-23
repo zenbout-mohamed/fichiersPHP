@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP_09_Exo4</title>
+</head>
+
+<body>
+    <h1>Exercice 04 :</h1>
+    <hr>
+    <main>
+        <form action="enjoy.php" method="post">
+            <label>
+                <!-- les crochets indiquent que plusieurs valeurs peuvent être envoyées sous forme de tableau (array) au script PHP.
+            Si l’utilisateur coche plusieurs cases, par exemple "musique", "sport" et "lecture". :
+            Donc au lieu d’avoir une seule valeur, on obtiendra un tableau contenant toutes les valeurs sélectionnées.
+            Si on avais écrit name="loisir" sans crochet, alors seule la dernière valeur cochée serait transmise, et tu ne pourrais pas récupérer plusieurs choix. -->
+                <input type="checkbox" name="loisir[]" value="musique"> Musique
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="gastronomie"> Gastronomie
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="sport"> Sport
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="lecture"> Lecture
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="manga"> Manga
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="littérature"> Littérature
+            </label>
+            <hr>
+            <label>
+                <input type="checkbox" name="loisir[]" value="code"> Code
+            </label>
+            <hr>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </main>
+</body>
+
+</html>
